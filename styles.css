@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.form {
+    border-radius: 30px;
+    padding: 20px 50px 20px 50px;
+    background-color: #d7d8d7;
+}
+
+.judul {
+    font-size: 15px;
+    padding: 10px 0 20px 0;
+    text-align: center;
+}
+
+.Saldo {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 25px;
+    font-family: arial, sans-serif;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.Saldo h2 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.totalSaldo {
+    background-color: #00ff374e;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.totalSaldo p{
+    margin: 0;
+    font-size: 16px;
+    color: #00796b;
+}
+
+.totalSaldo h3 {
+    margin: 5px 0 0;
+    font-size: 24px;
+    color: #004d40;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.details div{
+    flex: 1;
+    padding: 10px;
+    background-color: #00796b;
+    border-radius: 8px;
+}
+
+.details .income{
+    background-color: #2195f365;
+}
+
+.details .expense {
+    background-color: #d32f2f71;
+}
+.details p{
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+
+form {
+    font-size: 15px;
+    flex-direction: column;
+    display: flex;
+    margin: 20px auto;
+    gap: 10px;
+    max-width: 400px;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+form input, form select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+  
+form select {
+    background-color: #fff;
+    cursor: pointer;
+}
+  
+form button{
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+}
+
+button.simpan{
+    background-color: rgb(22, 208, 22);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

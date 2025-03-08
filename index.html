@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="judul">
+                <h1>Aplikasi Keuangan Sederhana</h1>
+            </div>
+            <div class="Saldo">
+                <h2>Saldo Keuangan</h2>
+                <div class="totalSaldo">
+                  <p>Saldo Saat Ini:</p>
+                  <h3 id="saldo">Rp </h3>
+                </div>
+                <div class="details">
+                  <div class="income">
+                    <p>Pemasukan</p>
+                    <h4 id="pemasukan">Rp </h4>
+                  </div>
+                  <div class="expense">
+                    <p>Pengeluaran</p>
+                    <h4 id="pengeluaran">Rp </h4>
+                  </div>
+                </div>
+              </div>
+            <form id="tabel" action="save_data.php" method="POST">
+                <label for="tanggal">Tanggal</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+
+                <label for="keterangan">keterangan</label>
+                <input type="text" id="keterangan" name="keterangan" required>
+
+                <label for="jenis">Jenis</label>
+                <select id="jenis" name="jenis" required>
+                  <option value="" disabled selected>Pilih Jenis</option>
+                  <option value="pemasukan">Pemasukan</option>
+                  <option value="pengeluaran">Pengeluaran</option>
+                </select>
+                
+                <label for="jumlah">Jumlah</label>
+                <input type="number" id="jumlah" name="jumlah" required>
+                <button class="simpan" type="submit">Simpan</button>
+              </form>
+          </div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
